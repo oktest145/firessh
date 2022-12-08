@@ -3,15 +3,15 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 CEKEXPIRED () {
     today=$(date -d +1day +%Y-%m-%d)
-    Exp1=$(curl -sS https://raw.githubusercontent.com/oktest145/firessh/main/permission/ip  | grep $MYIP | awk '{print $3}')
+    Exp1=$(curl -sS https://raw.githubusercontent.com/oktest145/firessh/main/permission/ip | grep $MYIP | awk '{print $3}')
     if [[ $today < $Exp1 ]]; then
-    echo -e "\e[32mSTATUS SCRIPT AKTIF...\e[0m"
+    echo -e "\e[32m STATUS SCRIPT ...\e[0m"
     else
-    echo -e "\e[31mSCRIPT ANDA EXPIRED!\e[0m";
+    echo -e "\e[31m SCRIPT EXPIRED!\e[0m";
     exit 0
 fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/oktest145/firessh/main/permission/ip  | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/oktest145/firessh/main/permission/ip | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 CEKEXPIRED
@@ -24,16 +24,16 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[0;100;33m      • BANDWITH MONITOR •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "" 
-echo -e " [\e[36m•1\e[0m] Lihat Total Bandwith Tersisa"
-echo -e " [\e[36m•2\e[0m] Tabel Penggunaan Setiap 5 Menit"
-echo -e " [\e[36m•3\e[0m] Tabel Penggunaan Setiap Jam"
-echo -e " [\e[36m•4\e[0m] Tabel Penggunaan Setiap Hari"
-echo -e " [\e[36m•5\e[0m] Tabel Penggunaan Setiap Bulan"
-echo -e " [\e[36m•6\e[0m] Tabel Penggunaan Setiap Tahun"
-echo -e " [\e[36m•7\e[0m] Tabel Penggunaan Tertinggi"
-echo -e " [\e[36m•8\e[0m] Statistik Penggunaan Setiap Jam"
-echo -e " [\e[36m•9\e[0m] Lihat Penggunaan Aktif Saat Ini"
-echo -e " [\e[36m10\e[0m] Lihat Trafik Penggunaan Aktif Saat Ini [5s]"
+echo -e " [\e[36m•1\e[0m] Total Bandwidth Remaining"
+echo -e " [\e[36m•2\e[0m] Usage Table Every 5 Minutes"
+echo -e " [\e[36m•3\e[0m] Hourly Usage Table"
+echo -e " [\e[36m•4\e[0m] Daily Usage Table"
+echo -e " [\e[36m•5\e[0m] Monthly Usage Table"
+echo -e " [\e[36m•6\e[0m] Yearly Usage Table"
+echo -e " [\e[36m•7\e[0m] Highest Usage Statistics"
+echo -e " [\e[36m•8\e[0m] Hourly Usage Statistics"
+echo -e " [\e[36m•9\e[0m] View Current Active Usage"
+echo -e " [\e[36m10\e[0m] View Current Active Usage Traffic [5s]"
 echo -e "" 
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
 echo -e " [\e[31m•x\e[0m] Keluar"
