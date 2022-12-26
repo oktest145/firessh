@@ -168,7 +168,7 @@ echo ""
 clear
 red "Tambah Domain Untuk XRAY"
 echo " "
-read -rp "Input domain kamu : " -e dns
+read -rp "Input domain ( A Record ): " -e dns
     if [ -z $dns ]; then
         echo -e "
         Nothing input for domain!
