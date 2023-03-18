@@ -166,7 +166,7 @@ echo ""
 #wget -q https://raw.githubusercontent.com/oktest145/firessh/main/tools.sh;chmod +x tools.sh;./tools.sh
 #rm tools.sh
 clear
-red "Tambah Domain Untuk XRAY"
+red "Enter Domain for XRAY"
 echo " "
 read -rp "Input domain ( A Record ): " -e dns
     if [ -z $dns ]; then
