@@ -63,7 +63,7 @@ cd
 cat > /etc/systemd/system/client-sldns.service << END
 [Unit]
 Description=Client SlowDNS
-Documentation=
+Documentation=https://github.com/oktest145/firessh
 After=network.target nss-lookup.target
 [Service]
 Type=simple
