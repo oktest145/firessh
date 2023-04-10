@@ -130,5 +130,5 @@ case $opt in
 8) clear ; clearcache ;;
 9) clear ; m-slowdns ;;
 x) exit ;;
-*) echo "Anda salah tekan " ; sleep 1 ; menu ;;
+*) echo "Achha Chalta Hu " ; sleep 1 ; menu ;;
 esac
