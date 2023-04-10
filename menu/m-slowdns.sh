@@ -13,6 +13,7 @@ CEKEXPIRED () {
 fi
 }
 NS=$(cat /root/nsdomain)
+
 IZIN=$(curl -sS https://raw.githubusercontent.com/oktest145/firessh/main/permission/ip  | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
@@ -28,6 +29,7 @@ echo -e "\E[0;100;33m       • Slowdns SSH MENU •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo "NS - Nameserver :" $NS
+
 echo -e " [\e[36m•1\e[0m] Create SSH"
 echo -e " [\e[36m•2\e[0m] Trial Account SSH & OpenVPN "
 echo -e " [\e[36m•3\e[0m] Renew SSH"
