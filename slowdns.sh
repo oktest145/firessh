@@ -11,9 +11,9 @@ rm -rf /root/nsdomain
 rm nsdomain
 
 #input nameserver manual to cloudflare
-read -rp "Masukkan domain: " -e domain
+read -rp "Domain: " -e domain
 
-read -rp "Masukkan Subdomain: " -e sub
+read -rp "Subdomain: " -e sub
 SUB_DOMAIN=${sub}.${domain}
 NS_DOMAIN=slowdns-${SUB_DOMAIN}
 echo $NS_DOMAIN > /root/nsdomain
