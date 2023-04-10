@@ -58,4 +58,3 @@ case $opt in
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; m-sshovpn ;;
 esac
-
