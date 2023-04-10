@@ -27,7 +27,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[0;100;33m       • Slowdns SSH MENU •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo "NS - Nameserver :" $na
+echo "NS - Nameserver :" $NS
 echo -e " [\e[36m•1\e[0m] Create SSH"
 echo -e " [\e[36m•2\e[0m] Trial Account SSH & OpenVPN "
 echo -e " [\e[36m•3\e[0m] Renew SSH"
