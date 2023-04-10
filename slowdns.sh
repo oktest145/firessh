@@ -95,3 +95,5 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 END
+cd 
+
