@@ -12,7 +12,7 @@ CEKEXPIRED () {
     exit 0
 fi
 }
-nameserver=$(cat /root/nsdomain)
+NS=$(cat /root/nsdomain)
 IZIN=$(curl -sS https://raw.githubusercontent.com/oktest145/firessh/main/permission/ip  | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
