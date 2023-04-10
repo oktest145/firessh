@@ -62,8 +62,8 @@ cd
 #install client-sldns.service
 cat > /etc/systemd/system/client-sldns.service << END
 [Unit]
-Description=Client SlowDNS By HideSSH
-Documentation=https://hidessh.com
+Description=Client SlowDNS
+Documentation=
 After=network.target nss-lookup.target
 [Service]
 Type=simple
@@ -82,7 +82,7 @@ cd
 cat > /etc/systemd/system/server-sldns.service << END
 [Unit]
 Description=Server SlowDNS 
-Documentation=https://hidessh.com
+Documentation=
 After=network.target nss-lookup.target
 [Service]
 Type=simple
