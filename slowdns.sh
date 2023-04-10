@@ -96,3 +96,10 @@ Restart=on-failure
 WantedBy=multi-user.target
 END
 cd 
+
+chmod +x /etc/systemd/system/client-sldns.service
+
+chmod +x /etc/systemd/system/server-sldns.service
+pkill sldns-server
+pkill sldns-client
+
