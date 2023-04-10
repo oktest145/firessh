@@ -13,7 +13,7 @@ CEKEXPIRED () {
 fi
 }
 NS=$(cat /root/nsdomain)
-KEY=$(cat /etc/slowdns/server.key)
+KEY=$(cat /etc/slowdns/server.pub)
 IZIN=$(curl -sS https://raw.githubusercontent.com/oktest145/firessh/main/permission/ip  | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
