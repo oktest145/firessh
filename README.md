@@ -14,6 +14,7 @@
 - Vless gRPC : 443
 - Trojan gRPC : 443
 - Shadowsocks gRPC : 443
+- SlowDNS 
 
 ## Setup Script 
 
@@ -38,6 +39,9 @@ apt-get purge netfilter-persistent
 
 reboot
 ```
+## Setup NS records 
+##  A sub ipaddrs 
+##  NS ns-sub sub
 
 ### If Need Server You can take Digital Ocean Trial
 
