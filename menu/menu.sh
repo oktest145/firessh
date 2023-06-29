@@ -89,7 +89,7 @@ uram=$( free -m | awk 'NR==2 {print $3}' )
 fram=$( free -m | awk 'NR==2 {print $4}' )
 clear 
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "                 • FIRESSH 🔥 •                 "
+echo -e "                 • SUPREME •                 "
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m OS            \e[0m:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e "\e[33m IP            \e[0m:  $IPVPS"	
@@ -104,7 +104,6 @@ echo -e " [\e[36m•1\e[0m] SSH Menu"
 echo -e " [\e[36m•2\e[0m] Vmess Menu"
 echo -e " [\e[36m•3\e[0m] Vless Menu"
 echo -e " [\e[36m•4\e[0m] Shadowsocks Menu"
-echo _e " [\e[36m•9\e[0m] Slowdns Menu"
 echo -e " [\e[36m•5\e[0m] Trojan Menu"
 echo -e " [\e[36m•6\e[0m] System Menu"
 echo -e " [\e[36m•7\e[0m] Status Service"
@@ -128,7 +127,6 @@ case $opt in
 6) clear ; m-system ;;
 7) clear ; running ;;
 8) clear ; clearcache ;;
-9) clear ; m-slowdns ;;
 x) exit ;;
-*) echo "Achha Chalta Hu " ; sleep 1 ; menu ;;
+*) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
